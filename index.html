@@ -76,7 +76,7 @@
                 <span class="text-white">Contagem</span><span class="text-orange-500">360</span>
               </h2>
 
-              <p class="footer-text text-sm">
+              <p class="footer-text text-xs">
                 Conectando você, negócios e oportunidades.
               </p>
             </div>
@@ -195,32 +195,42 @@
 
         <div class="md:col-span-3">
 
-          <h2 class="text-white font-semibold mb-4">
-            Receba nossas novidades
-          </h2>
-
-          <p class="footer-text mb-4">
-            Cadastre seu e-mail e fique por dentro dos eventos, notícias e oportunidades da cidade.
-          </p>
-
-          <form id="newsletter-form" class="flex gap-2">
-
-            <input id="newsletter-email" type="email" placeholder="Digite seu e-mail" required
-              class="flex-1 rounded-md px-3 py-2 text-gray-900">
-
-            <button class="newsletter-btn px-4 rounded-md bg-amber-500 font-bold text-[#0a1940]">
-
-              <i data-lucide="arrow-right"></i>
-
-            </button>
-
-          </form>
-
-          <p id="newsletter-success" class="hidden mt-4 text-green-400">
-            Cadastro realizado com sucesso!
-          </p>
-
-        </div>
+          <div class="h-full border border-white-500 rounded-xl p-6 bg-gray-800/50 hover:bg-gray-800/70 transition-all">
+      
+              <h2 class="text-white text-xl font-semibold mb-4">
+                  Receba nossas novidades
+              </h2>
+      
+              <p class="footer-text text-sm leading-6 mb-5">
+                  Cadastre seu e-mail e fique por dentro dos eventos, notícias e oportunidades da cidade.
+              </p>
+      
+              <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3">
+      
+                  <input
+                      id="newsletter-email"
+                      type="email"
+                      placeholder="Digite seu e-mail"
+                      required
+                      class="w-full flex-1 rounded-md px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500">
+      
+                  <button
+                      type="submit"
+                      class="newsletter-btn flex items-center justify-center rounded-md bg-amber-500 px-5 py-3 font-bold text-[#0a1940] sm:w-auto w-full">
+      
+                      <i data-lucide="arrow-right" class="w-5 h-5"></i>
+      
+                  </button>
+      
+              </form>
+      
+              <p id="newsletter-success" class="hidden mt-4 text-sm text-green-400">
+                  Cadastro realizado com sucesso!
+              </p>
+      
+          </div>
+      
+      </div>
 
       </div>
 
